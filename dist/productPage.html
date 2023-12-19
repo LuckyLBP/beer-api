@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ProductPage</title>
+</head>
+<body>
+    <nav>
+        <div class="navLeft">
+            <h1>BeerKing</h1>
+        </div>
+        <div class="navRight">
+            <ul id="navbar">
+                <a href="index.html">
+                    <img id="navIcons" src="./assets/house.svg" alt="">
+                </a>                          
+                <a href="./searchPage.html">
+                    <img id="navIcons" src="./assets/search.svg" alt="">
+                </a>                
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="productContainer">
+            <div class="productContainerLeft">
+                <img id="productImage" src="" alt="">
+            </div>
+            <div class="productContainerRight">
+                <h1 id="productName"></h1>
+                <h2>Description</h2>
+                <p id="productDescription"></p>
+
+                <h2>Brewers tips</h2>
+                <p id="brewersTips"></p>
+
+                <h2>Food Pairing</h2>
+                <ul>
+                    <li id="productFoodPairing"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="productStats">
+            <h2 class="productInfo">Basics</h2>
+            <table class="greyGridTable">
+                <tbody>
+                <tr>
+                <td>ABV</td><td id="productAbv"></td><td></td></tr>
+                <tr>
+                <td>IBU</td><td id="productIbu"></td><td></td></tr>
+                <tr>
+                <td>Target FG</td><td id="productTargetFg"></td><td></td></tr>
+                <tr>
+                <td>Target OG</td><td id="productTargetOg"></td><td></td></tr>
+                <tr>
+                <td>EBC</td><td id="productEbc"></td><td></td></tr>
+                <tr>
+                <td>SRM</td><td id="productSrm"></td><td></td></tr>
+                <tr>
+                <td>PH</td><td id="productPh"></td><td></td></tr>
+                <tr>
+                <td>Attenuation level</td><td id="productAl"></td><td></td></tr>
+                <tr>
+                <td>Volume</td><td id="productVolume"></td><td>Litres</td></tr>
+                <td>Boil Volume</td><td id="productBoilVolume"></td><td>Litres</td></tr>
+                </tbody>
+                </tr>
+                </table>
+        </div>
+    </header>
+<script src="./js/productPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SearchPage</title>
+</head>
+<body>
+    <nav>
+        <div class="navLeft">
+            <h1>BeerKing</h1>
+        </div>
+        <div class="navRight">
+            <ul id="navbar">
+                <a href="index.html">
+                    <img id="navIcons" src="./assets/house.svg" alt="">
+                </a>                              
+                <a href="./searchPage.html">
+                    <img id="navIcons" src="./assets/search.svg" alt="">
+                </a>                
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="searchContainer">
+            <input id="searchInput" type="text" placeholder="Search Beer">
+            <button id="searchButton">Search</button>
+        </section>
+        
+    
+        <section id="searchResults">
+        </section>
+    
+        <button class="loadMore" id="loadMoreButton" style="display: none;">Load More</button>
+    </main>
+    
+
+<script src="./js/searchPage.js"></script>
+</body>
+</html>
