@@ -45,3 +45,23 @@ function displayBeer(beer: any, cardId: string): void {
 document.addEventListener('DOMContentLoaded', () => {
     fetchRandomBeers();
 });
+
+
+const randomBeerButton = document.getElementById('randomBeerButton');
+
+randomBeerButton.addEventListener('click', () => {
+    const apiUrlRandom: string = 'https://api.punkapi.com/v2/beers/random';
+
+    fetch(apiUrlRandom)
+        .then(response => response.json())
+        .then(data => {
+            const [beer] = data;
+            window.location.href = `productPage.html?beerId=${beer.id}`;
+        })
+        .catch(error => {
+            console.error('Error fetching random beer: ', error);
+        });
+
+        console.log('Click')
+});
+
